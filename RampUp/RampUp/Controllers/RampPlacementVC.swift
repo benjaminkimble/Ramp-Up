@@ -16,6 +16,7 @@ class RampPlacementVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentatio
     
     @IBAction func onRampBtnPressed(_ sender: UIButton) {
         let rampPickerVC = RampPickerVC(size: CGSize(width: 250, height: 250))
+        rampPickerVC.rampPlacerVC = self
         rampPickerVC.modalPresentationStyle = .popover
         rampPickerVC.popoverPresentationController?.delegate = self
         present(rampPickerVC, animated: true, completion: nil)
@@ -25,6 +26,10 @@ class RampPlacementVC: UIViewController, ARSCNViewDelegate, UIPopoverPresentatio
     
     func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
         return .none
+    }
+    
+    func onRampSelected(_ rampName: String) {
+        
     }
     
     override func viewDidLoad() {
