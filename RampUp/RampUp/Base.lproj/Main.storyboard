@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ramp PlacementVC-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="RampPlacementVC" customModule="RampUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KMY-2R-1Sg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ee-pP-10r">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9bb-Ut-4ES" firstAttribute="trailing" secondItem="6ee-pP-10r" secondAttribute="trailing" id="Eqf-5c-V01"/>
+                            <constraint firstItem="6ee-pP-10r" firstAttribute="leading" secondItem="9bb-Ut-4ES" secondAttribute="leading" id="FDI-5a-13W"/>
+                            <constraint firstItem="9bb-Ut-4ES" firstAttribute="bottom" secondItem="6ee-pP-10r" secondAttribute="bottom" id="JSY-Z1-fAN"/>
+                            <constraint firstItem="6ee-pP-10r" firstAttribute="top" secondItem="9bb-Ut-4ES" secondAttribute="top" id="KOU-1p-PTn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9bb-Ut-4ES"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="6ee-pP-10r" id="OJc-Vj-YQ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
